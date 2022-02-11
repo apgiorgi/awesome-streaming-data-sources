@@ -22,13 +22,13 @@ As most of the feeds are currently available exclusively via HTTP polling, I pla
 
 - [NOAA National Data Buoy Center - Latest Observations](http://www.ndbc.noaa.gov/data/latest_obs/latest_obs.txt)
 
-  [PROTOCOL: HTTP; PAYLOAD: Custom; MAX. RATE: 5 min]
+  [PROTOCOL: HTTP; PAYLOAD: Custom; MAX. RESOLUTION: 5 min]
 
   This file has the most recent observation(provided that the observation is less than two hours old)from all stations hosted on the NDBC website. Since this file has multiple stations, it also contains each station's position information (latitude and longitude). The file is relatively small, less than 100KB, and is updated approximately every 5 minutes, so it would be a good data source if you are interested in meteorological observations from multiple stations. [More Information](https://www.ndbc.noaa.gov/docs/ndbc_web_data_guide.pdf)
 
 - [Netatmo Weather API](https://dev.netatmo.com/apidocumentation/weather)
 
-  [PROTOCOL: HTTP (API); PAYLOAD: JSON; MAX. RATE: 5/10 min]
+  [PROTOCOL: HTTP (API); PAYLOAD: JSON; MAX. RESOLUTION: 5/10 min]
 
   Publicly available data from Netatmo Weather stations.
 
@@ -36,7 +36,7 @@ As most of the feeds are currently available exclusively via HTTP polling, I pla
 
 - [Binance Websocket Live Market Streams](https://binance-docs.github.io/apidocs/spot/en/#websocket-market-streams)
 
-  [PROTOCOL: WebSocket; PAYLOAD: JSON; MAX. RATE: 100ms]
+  [PROTOCOL: WebSocket; PAYLOAD: JSON; MAX. RESOLUTION: 100ms]
 
   This stream provides real-time updates on the latest price of all symbols on Binance.
 
@@ -44,7 +44,7 @@ As most of the feeds are currently available exclusively via HTTP polling, I pla
 
 - [The Open Industrial Data Project](https://www.openindustrialdata.com/) 🔑
 
-  [PROTOCOL: HTTP([API](https://docs.cognite.com/dev/use_the_API.html)/[SDK](https://docs.cognite.com/dev/guides/sdk/python/)/[Spark](https://docs.cognite.com/dev/guides/spark-datasource/)); PAYLOAD: JSON; MAX. RATE: ~20s]
+  [PROTOCOL: HTTP([API](https://docs.cognite.com/dev/use_the_API.html)/[SDK](https://docs.cognite.com/dev/guides/sdk/python/)/[Spark](https://docs.cognite.com/dev/guides/spark-datasource/)); PAYLOAD: JSON; MAX. RESOLUTION: ~20s]
 
   _NOTE: Data is delayed by 7 days or more._
 
@@ -56,13 +56,13 @@ As most of the feeds are currently available exclusively via HTTP polling, I pla
 
 - [Balancing Mechanism Reporting Service (BMRS)](https://www.elexon.co.uk/guidance-note/bmrs-api-data-push-user-guide/) 🔑
 
-  [PROTOCOL: HTTP(API)/OpenWire/STOMP/AMPQ; PAYLOAD: XML/CSV; MAX. RATE: ???]
+  [PROTOCOL: HTTP(API)/OpenWire/STOMP/AMPQ; PAYLOAD: XML/CSV; MAX. RESOLUTION: ???]
 
   This is the primary channel for providing operational data relating to the GB Electricity Balancing and Settlement arrangements. It is used extensively by market participants to help make trading decisions and understanding market dynamics and acts as a prompt reporting platform as well as a means of accessing historic data.
 
 - [PV_Live API](https://api0.solar.sheffield.ac.uk/pvlive/v3/docs)
 
-  [PROTOCOL: HTTP(API); PAYLOAD: JSON/CSV; MAX. RATE: 5 min]
+  [PROTOCOL: HTTP(API); PAYLOAD: JSON/CSV; MAX. RESOLUTION: 5 min]
 
   The PV_Live web API provides access to near-real-time and historical estimates of PV generation on the GB transmission network.
 
@@ -70,13 +70,13 @@ As most of the feeds are currently available exclusively via HTTP polling, I pla
 
 - [Transport for London Open Data Unified API](https://tfl.gov.uk/info-for/open-data-users/unified-api) 🔑
 
-  [PROTOCOL: WebSocket([SignalR](https://gist.github.com/idlem1nd/8667222f74652f78569e))/HTTP(API); PAYLOAD: JSON/XML; MAX. RATE: 5s]
+  [PROTOCOL: WebSocket([SignalR](https://gist.github.com/idlem1nd/8667222f74652f78569e))/HTTP(API); PAYLOAD: JSON/XML; MAX. RESOLUTION: 5s]
 
   All public TfL data (or "open data") is freely released for developers to use in their software and services. You can learn more at [TfL Digital Blog](https://blog.tfl.gov.uk/category/open-data/)
 
 - [Open Rail Data (Darwin)](https://opendata.nationalrail.co.uk/) 🔑
 
-  [PROTOCOL: HTTP(API)/OpenWire/STOMP; PAYLOAD: JSON/XML/CIF; MAX. RATE: ???]
+  [PROTOCOL: HTTP(API)/OpenWire/STOMP; PAYLOAD: JSON/XML/CIF; MAX. RESOLUTION: ???]
 
   National Rail Enquiries (NRE) built their Darwin system in the early to mid 2000s to improve the level of accuracy of information displayed to passengers. Darwin should be considered the single source of truth for passenger information, and it feeds information to nearly all customer information systems at stations.
 
@@ -86,7 +86,7 @@ As most of the feeds are currently available exclusively via HTTP polling, I pla
 
 - [Network Rail feeds (TRUST)](https://datafeeds.networkrail.co.uk/) 🔑
 
-  [PROTOCOL: HTTP(API)/OpenWire/STOMP; PAYLOAD: JSON/XML/CIF; MAX. RATE: 5s (100Hz Batched)]
+  [PROTOCOL: HTTP(API)/OpenWire/STOMP; PAYLOAD: JSON/XML/CIF; MAX. RESOLUTION: 100Hz (5s batches)]
 
   TRUST's primary purpose is to act as a historical record of train movements, allowing comparison between scheduled and actual times, as well as to record cancellations. When a delay - a change in lateness between two TRUST reporting points - of over a certain threshold occurs, a separate system called TRUST DA (Delay Attribution) requires that delay be explained and attributed. This data is not available in real-time at present, nor is it updated in real-time, and a delay may be reattributed many times until is it agreed.
 
@@ -100,7 +100,7 @@ As most of the feeds are currently available exclusively via HTTP polling, I pla
 
 - [Ably Hub - Open Data Streaming Program](https://ably.com/hub) 🔑
 
-  [PROTOCOL: HTTP/SSE/WebSocket/MQTT/[Others](https://ably.com/protocols); PAYLOAD: JSON/CSV; MAX. RATE: 5 min]
+  [PROTOCOL: HTTP/SSE/WebSocket/MQTT/[Others](https://ably.com/protocols); PAYLOAD: JSON/CSV; MAX. RESOLUTION: 5 min]
 
   Ably supports open data sources in the Hub offering the API Streamer for free to open data producers and consumers, like BBC News, BART, Coindesk, MTBA, OpenWeatherMap, and more.
 
