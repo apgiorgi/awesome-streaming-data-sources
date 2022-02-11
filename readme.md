@@ -10,10 +10,11 @@ As most of the feeds are currently available exclusively via HTTP polling, I pla
 
 - [Weather](#weather)
 - [Finance](#finance)
+- [Industrial](#industrial)
 - [Energy](#energy)
 - [Traffic and Travel](#traffic-and-travel)
-- [Social Networks](#social-media)
-- [Related List](#related-list)
+- [Others](#others)
+- [Related Lists](#related-lists)
 
 🔑 - Free Registration & API Key required
 
