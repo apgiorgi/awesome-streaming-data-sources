@@ -24,17 +24,21 @@ As most of the feeds are currently available exclusively via HTTP polling, I pla
 
 - [NOAA National Data Buoy Center - Latest Observations](http://www.ndbc.noaa.gov/data/latest_obs/latest_obs.txt)
 
-  [💾 Scraped Data](https://github.com/apgiorgi/scraped-streaming-data-sources/tree/master/NOAA-NDBC)
+  [PROTOCOL: HTTP; PAYLOAD: TSV; MAX. RESOLUTION: 5 min]
+
+  [💾 Git Scraped Data](https://github.com/apgiorgi/scraped-streaming-data-sources/tree/master/NOAA-NDBC)
+
+  ⚖️ [Public Domain License](https://www.weather.gov/disclaimer)
 
   [Measurement Descriptions and Units](https://www.ndbc.noaa.gov/measdes.shtml)
-
-  [PROTOCOL: HTTP; PAYLOAD: Custom; MAX. RESOLUTION: 5 min]
 
   _"This file has the most recent observation(provided that the observation is less than two hours old)from all stations hosted on the NDBC website. Since this file has multiple stations, it also contains each station's position information (latitude and longitude). The file is relatively small, less than 100KB, and is updated approximately every 5 minutes, so it would be a good data source if you are interested in meteorological observations from multiple stations."_ [More Information](https://www.ndbc.noaa.gov/docs/ndbc_web_data_guide.pdf)
 
 - [Netatmo Weather API](https://dev.netatmo.com/apidocumentation/weather)
 
   [PROTOCOL: HTTP (API); PAYLOAD: JSON; MAX. RESOLUTION: 5/10 min]
+
+  ⚖️ [Terms of Use](https://dev.netatmo.com/legal)
 
   Publicly available data from Netatmo Weather stations.
 
@@ -43,6 +47,8 @@ As most of the feeds are currently available exclusively via HTTP polling, I pla
 - [Binance Websocket Live Market Streams](https://binance-docs.github.io/apidocs/spot/en/#websocket-market-streams)
 
   [PROTOCOL: WebSocket; PAYLOAD: JSON; MAX. RESOLUTION: 100ms]
+
+  ⚖️ [Terms of Use](https://www.binance.com/en/terms)
 
   This stream provides real-time updates on the latest price of all symbols on Binance.
 
@@ -64,13 +70,13 @@ As most of the feeds are currently available exclusively via HTTP polling, I pla
 
   [PROTOCOL: HTTP(API)/OpenWire/STOMP/AMPQ; PAYLOAD: XML/CSV; MAX. RESOLUTION: ???]
 
-  This is the primary channel for providing operational data relating to the GB Electricity Balancing and Settlement arrangements. It is used extensively by market participants to help make trading decisions and understanding market dynamics and acts as a prompt reporting platform as well as a means of accessing historic data.
+  This is the primary channel for providing operational data relating to the Great Britain Electricity Balancing and Settlement arrangements. It is used extensively by market participants to help make trading decisions and understanding market dynamics and acts as a prompt reporting platform as well as a means of accessing historic data.
 
 - [PV_Live API](https://api0.solar.sheffield.ac.uk/pvlive/v3/docs)
 
   [PROTOCOL: HTTP(API); PAYLOAD: JSON/CSV; MAX. RESOLUTION: 5 min]
 
-  The PV_Live web API provides access to near-real-time and historical estimates of PV generation on the GB transmission network.
+  The PV_Live web API provides access to near-real-time and historical estimates of PV generation on the Great Britain transmission network.
 
 ## Traffic and Travel
 
